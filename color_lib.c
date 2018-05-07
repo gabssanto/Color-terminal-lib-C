@@ -1,5 +1,3 @@
-//Color lib for C terminal
-
 #include <stdio.h>
 
 #define KNRM  "\x1B[0m"
@@ -11,16 +9,14 @@
 #define KCYN  "\x1B[36m"
 #define KWHT  "\x1B[37m"
 
-/*int color()
-{
-    printf("%sred\n", KRED);
-    printf("%sgreen\n", KGRN);
-    printf("%syellow\n", KYEL);
-    printf("%sblue\n", KBLU);
-    printf("%smagenta\n", KMAG);
-    printf("%scyan\n", KCYN);
-    printf("%swhite\n", KWHT);
-    printf("%snormal\n", KNRM);
-
+int color(){
+    printf("%sI'm red\n", KRED);
+    printf("%sI'm green\n", KGRN);
+    printf("%sI'm yellow\n", KYEL);
+    printf("%sI'm blue\n", KBLU);
+    printf("%sI'm magenta\n", KMAG);
+    printf("%sI'm cyan\n", KCYN);
+    printf("%sI'm white\n", KWHT);
+    printf("%sI'm normal\n", KNRM);
     return 0;
-}*/
+}
