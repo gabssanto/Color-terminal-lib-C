@@ -1,3 +1,5 @@
+//Color lib for C terminal
+
 #include <stdio.h>
 
 #define KNRM  "\x1B[0m"
