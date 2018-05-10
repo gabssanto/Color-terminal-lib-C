@@ -1,22 +1,23 @@
 #include <stdio.h>
 
-#define KNRM  "\x1B[0m"
-#define KRED  "\x1B[31m"
-#define KGRN  "\x1B[32m"
-#define KYEL  "\x1B[33m"
-#define KBLU  "\x1B[34m"
-#define KMAG  "\x1B[35m"
-#define KCYN  "\x1B[36m"
-#define KWHT  "\x1B[37m"
+#define ANSI_COLOR_RED     "\x1b[31m"
+#define ANSI_COLOR_GREEN   "\x1b[32m"
+#define ANSI_COLOR_YELLOW  "\x1b[33m"
+#define ANSI_COLOR_BLUE    "\x1b[34m"
+#define ANSI_COLOR_MAGENTA "\x1b[35m"
+#define ANSI_COLOR_CYAN    "\x1b[36m"
+#define ANSI_COLOR_RESET   "\x1b[0m"
+#define ANSI_COLOR_WHITE   "\x1B[37m"
 
-int color(){
-    printf("%sI'm red\n", KRED);
-    printf("%sI'm green\n", KGRN);
-    printf("%sI'm yellow\n", KYEL);
-    printf("%sI'm blue\n", KBLU);
-    printf("%sI'm magenta\n", KMAG);
-    printf("%sI'm cyan\n", KCYN);
-    printf("%sI'm white\n", KWHT);
-    printf("%sI'm normal\n", KNRM);
-    return 0;
+int main (int argc, char const *argv[]) {
+    int s=5;
+
+  printf(ANSI_COLOR_RED     " %d This text is RED!"     ANSI_COLOR_RESET "\n", s);
+  printf(ANSI_COLOR_GREEN   "This text is GREEN!"       ANSI_COLOR_RESET "\n");
+  printf(ANSI_COLOR_YELLOW  "This text is YELLOW!"      ANSI_COLOR_RESET "\n");
+  printf(ANSI_COLOR_BLUE    "This text is BLUE!"        ANSI_COLOR_RESET "\n");
+  printf(ANSI_COLOR_MAGENTA "This text is MAGENTA!"     ANSI_COLOR_RESET "\n");
+  printf(ANSI_COLOR_CYAN    "This text is CYAN!"        ANSI_COLOR_RESET "\n");
+  printf(ANSI_COLOR_WHITE   "This text is WHITE!"       ANSI_COLOR_RESET "\n");
+  return 0;
 }
