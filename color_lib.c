@@ -7,6 +7,7 @@
     #define CLEAR "clear"
 #endif
 
+#define ANSI_COLOR_BK_BLACK     "\x1b[40m"
 #define ANSI_COLOR_BK_RED     "\x1b[41m"
 #define ANSI_COLOR_BK_GREEN   "\x1b[42m"
 #define ANSI_COLOR_BK_YELLOW  "\x1b[43m"
@@ -15,6 +16,7 @@
 #define ANSI_COLOR_BK_CYAN    "\x1b[46m"
 #define ANSI_COLOR_BK_WHITE   "\x1b[47m"
 
+#define ANSI_COLOR_BLACK     "\x1b[30m"
 #define ANSI_COLOR_RED     "\x1b[31m"
 #define ANSI_COLOR_GREEN   "\x1b[32m"
 #define ANSI_COLOR_YELLOW  "\x1b[33m"
